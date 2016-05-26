@@ -12,3 +12,7 @@ Add the *.py file to /usr/lib64/ganglia/python_modules/
 sudo cp cacheread.py /usr/lib64/ganglia/python_modules/
 
 Then restart gmetad. 
+sudo service gmetad restart
+
+Then restart gmond. 
+sudo service gmond restart
