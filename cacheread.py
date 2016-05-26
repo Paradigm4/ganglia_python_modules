@@ -10,7 +10,7 @@ import re
 
 def print_names(start_path = '.'):
     total_size = 0
-    for dirpath, dirnames, filenames in os.walk(start_path):
+    for dirpath, dirnames, filenames in os.walk(start_path,followlinks=True):
         for d in dirnames:
             if(re.match(r'tmp', d)):
                 itempath = os.path.join(dirpath, d)
@@ -43,7 +43,7 @@ def metric_init(params):
         'call_back': readcache_handler,
         'time_max': 90,
         'value_type': 'float',
-        'units': 'MB',
+        'units': 'bytes',
         'slope': 'both',
         'format': '%u',
         'description': 'Size of the SciDB temp folder',
