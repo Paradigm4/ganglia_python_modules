@@ -27,7 +27,7 @@ scidb_folder = "/home/scidb/scidb_data15_12"
 
 def readcache_handler(name):  
     
-        try:
+    try:
         rtnval = print_names(scidb_folder)
     
     except IOError:
