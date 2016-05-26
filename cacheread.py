@@ -41,11 +41,11 @@ def metric_init(params):
 
     d1 = {'name': 'cacheread',
         'call_back': readcache_handler,
-        'time_max': 90,
+        'time_max': 60,
         'value_type': 'float',
-        'units': 'bytes',
+        'units': 'Bytes',
         'slope': 'both',
-        'format': '%u',
+        'format': '%f',
         'description': 'Size of the SciDB temp folder',
         'groups': 'health'}
 
