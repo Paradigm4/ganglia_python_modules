@@ -39,7 +39,7 @@ def metric_init(params):
     if 'scidb_folder' in params:
         scidb_folder = params['scidb_folder']
 
-    d1 = {'name': 'readcache',
+    d1 = {'name': 'cacheread',
         'call_back': readcache_handler,
         'time_max': 90,
         'value_type': 'float',
