@@ -8,8 +8,6 @@ from os.path import join,getsize
 import pwd
 import re
 
-
-
 def print_names(start_path = '.'):
     total_size = 0
     for dirpath, dirnames, filenames in os.walk(start_path):
